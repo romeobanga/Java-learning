@@ -1,0 +1,26 @@
+package produit;
+
+abstract class Produit { //Pour ne pas qu'il soit instanciable
+	
+	private final double prix; //Une fois le prix attribué à un produit, il ne doit plus pouvoir etre modifié
+	
+	public Produit (double unPrix) {
+		prix = unPrix;
+	}
+	
+	public Produit() {
+		prix = 0.0;
+	}
+	double calculPrix() {
+		
+		return prix;
+		
+	}
+	
+	public String  toString() {
+		return Double.toString(calculPrix()); //Ramène le prix qui est en double sous forme de String
+	}
+	
+	
+
+}

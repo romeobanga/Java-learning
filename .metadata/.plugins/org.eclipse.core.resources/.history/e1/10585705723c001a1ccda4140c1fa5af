@@ -1,0 +1,29 @@
+package produit;
+
+public class Mecanisme extends Produit {
+
+		void afficherProduit() {
+				
+			}
+		
+		double calculPrix() {
+			
+			return prix;
+			
+		}
+	
+		public class mecanismeAnalogique extends Mecanisme {
+
+		}
+		
+		
+		public class mecanismeDigital extends Mecanisme {
+
+		}
+		
+		
+		public class mecanismeDouble extends Mecanisme {
+
+		}
+
+}

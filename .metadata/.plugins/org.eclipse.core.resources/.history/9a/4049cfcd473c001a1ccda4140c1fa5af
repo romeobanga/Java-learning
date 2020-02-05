@@ -1,0 +1,19 @@
+package produit;
+
+public class Produit {
+	
+	 double prix;
+	
+	double calculPrix() {
+		
+		return prix*1.18;
+		
+	}
+	
+	void afficherProduit() {
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,33 @@
+package produit;
+
+public class Accessoire extends Produit {
+	
+	
+		void afficherProduit() {
+				
+			}
+		
+		double calculPrix() {
+			
+			return prix*1.18;
+			
+		}
+		
+		public class Boitier extends Accessoire {
+
+		}
+		
+		public class Bracelet extends Accessoire {
+
+		}
+		
+		public class Fermoir extends Accessoire {
+
+		}
+		
+		public class Vitre extends Accessoire {
+
+		}
+		
+
+}

@@ -1,0 +1,58 @@
+package produit;
+
+public class Mecanisme extends Produit {
+	
+	private String heure;
+	
+	public Mecanisme (double valeurDeBase, String uneHeure) {
+		super(valeurDeBase);
+		heure = uneHeure;
+	}
+	
+	public Mecanisme (double valeurDeBase) {
+		super(valeurDeBase);
+		heure = "12:00";
+	}
+
+
+		void afficherProduit() {
+				
+			}
+		
+	
+
+		public class mecanismeAnalogique extends Mecanisme {
+			
+			private int date;
+			public mecanismeAnalogique(double valeurDeBase) {
+				super(valeurDeBase);
+				// TODO Auto-generated constructor stub
+			}
+
+			
+		
+			}
+
+		
+		
+		
+		public class mecanismeDigital extends Mecanisme {
+			public mecanismeDigital(double valeurDeBase, String uneHeure) {
+				super(valeurDeBase, uneHeure);
+				// TODO Auto-generated constructor stub
+			}
+
+			private String reveil;
+
+		}
+		
+		public class mecanismeDouble extends mecanismeAnalogique {
+			public mecanismeDouble(double valeurDeBase) {
+				super(valeurDeBase);
+				// TODO Auto-generated constructor stub
+			}
+
+			private String reveil;
+		
+
+}

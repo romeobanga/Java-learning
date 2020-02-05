@@ -1,0 +1,5 @@
+package produit;
+
+public interface ReveilDigital {
+
+}

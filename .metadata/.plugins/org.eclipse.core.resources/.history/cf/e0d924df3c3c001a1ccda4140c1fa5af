@@ -1,0 +1,10 @@
+package produit;
+
+public class Accessoire extends Produit {
+	
+	
+		void afficherProduit() {
+				
+			}
+
+}

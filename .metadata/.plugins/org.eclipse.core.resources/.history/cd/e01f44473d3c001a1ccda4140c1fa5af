@@ -1,0 +1,11 @@
+package produit;
+
+public class Produit {
+	
+	
+	
+	double calculPrix() {
+		
+	}
+
+}

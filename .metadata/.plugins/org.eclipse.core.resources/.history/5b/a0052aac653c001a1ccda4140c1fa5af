@@ -1,0 +1,8 @@
+package produit;
+
+public class Montre extends Produit {
+	
+	double prix;
+	
+
+}
