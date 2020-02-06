@@ -8,6 +8,11 @@ abstract class Produit { //Pour ne pas qu'il soit instanciable
 	
 	public Produit() {prix = 0.0;}
 	
+	/*public Produit(Montre maMontre) {
+		// TODO Auto-generated constructor stub
+		
+	}*/
+
 	double calculPrix() { return prix;	}
 	
 	public String  toString() {return Double.toString(calculPrix()); }
