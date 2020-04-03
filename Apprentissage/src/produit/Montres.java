@@ -6,8 +6,8 @@ public class Montres {
 		
 		
 		mecanismeAnalogique v1 = new mecanismeAnalogique(312.0,"12:30",20200121);
-		mecanismeDigital   v2 = new mecanismeDigital(32.00, "11:45", "7:00");
-		mecanismeDouble v3 = new mecanismeDouble(543.00, "8:20", 20140328, "6:30");
+		mecanismeDigital    v2 = new mecanismeDigital(32.00, "11:45", "7:00");
+		mecanismeDouble     v3 = new mecanismeDouble(543.00, "8:20", 20140328, "6:30");
 		
 		System.out.println(v1);
 		System.out.println(v2);
