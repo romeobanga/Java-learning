@@ -1,4 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
+<!-- Cette page affiche un formulaire permettant la saisie d'informations sur le Client -->
 <!DOCTYPE html>
 <html>
     <head>
@@ -9,7 +10,7 @@
     <body>
         <div>
         <h3>Formulaire de création d'un Client</h3>
-		<form id=client action="Client" name="client" method="get">
+		<form id=client action="Client" name="client" method="get"> <!-- action="Client" => A la validation, la servlet Client est lancée  -->
 		
 		    <fieldset >
                    <legend>Informations client</legend>
