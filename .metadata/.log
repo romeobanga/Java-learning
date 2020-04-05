@@ -1016,3 +1016,8 @@ java.lang.NullPointerException
 !MESSAGE 
 !STACK 0
 java.lang.NullPointerException
+
+!ENTRY org.eclipse.ui.workbench.texteditor 4 0 2020-04-05 18:25:55.916
+!MESSAGE 
+!STACK 0
+java.lang.NullPointerException
