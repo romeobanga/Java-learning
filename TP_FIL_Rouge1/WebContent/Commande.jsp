@@ -10,7 +10,8 @@
 <body>
 		<div>
         <h3>Formulaire de création d'une commande</h3>
-		<form id=client action="Commande" name="client" method="get">
+		<form id=client action="Commande" name="client" method="post">
+		<!-- La methode post envoie les paramètres au servlet sans passer par l'URL mais plutot dans la partie corps de l'entête de la requete HTTP -->
 		<fieldset >
                    <legend>Informations client</legend>
                    
