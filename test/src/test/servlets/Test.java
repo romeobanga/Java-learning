@@ -9,6 +9,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+import test.beans.Auteur;
+
 /**
  * Servlet implementation class Test
  */
@@ -24,10 +26,24 @@ public class Test extends HttpServlet {
 
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 	
-		String paramAuteur = request.getParameter( "auteur" ); //Creation d'un paramètre
+		//String paramAuteur = request.getParameter( "nom" ); //Creation d'un paramètre
+		//String paramPrenomAuteur = request.getParameter( "prenom" );
 		String message = "Transmission de variables : OK ! " ;
 		request.setAttribute( "test", message ); //Creation de l'attribut
-		request.setAttribute("param1", paramAuteur);
+		
+		Auteur auteur = new Auteur(); //Instanciation du bean Auteur
+		auteur.setNom("Banga");
+		auteur.setPrenom("Roméo");
+		auteur.setActif(true);
+		request.setAttribute("auteur", auteur);
+		
+		Auteur auteur2 = new Auteur(); //Instanciation du bean Auteur
+		auteur2.setNom("Banga");
+		auteur2.setPrenom("Aaron");
+		auteur2.setActif(false);
+	//	request.setAttribute("auteur2", auteur2);
+		
+		//request.setAttribute("param1", paramAuteur);
 	
 		
 		this.getServletContext().getRequestDispatcher( "/WEB-INF/index.jsp" ).forward( request, response ); //Retourne la page index.jsp
