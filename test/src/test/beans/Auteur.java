@@ -6,7 +6,7 @@ public class Auteur {
 	 * Est Public
 	 * Contient des proprietés ou encore des champs non publics
 	 * Contient des getters/setters public
-	 * 
+	 * Contient un constructeur par défaut sans paramètre (ajouté implicitement par Eclipse)
 	 */
 	
 	private String nom;
