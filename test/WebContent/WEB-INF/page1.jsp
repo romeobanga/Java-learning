@@ -42,7 +42,7 @@
         
         <!-- Vérifications si vide ou null -->
 		${ empty 'test' } <br /> <!-- La chaîne testée n'est pas vide, le résultat est false -->
-		${ empty '' } <br /> <!-- La chaîne testée est vide, le résultat est true -->
+		${ empty '1' } <br /> <!-- La chaîne testée est vide, le résultat est true -->
 		${ !empty '' } <br /> <!-- La chaîne testée est vide, le résultat est false -->
 		
 		<!-- Conditions ternaires -->
@@ -81,7 +81,7 @@
        ${ aliments.aubergine } <br /><!-- affiche légume -->
     </p>
     <p>Test des objets implicites EL </p>
-    <p> <!--  Paramètres -->
+    <p> <!--  Paramètres ex: langue=fr, en -->
 	Langue : ${ paramValues.langue[1] }
 	<br />
 	Article : ${ param.article }

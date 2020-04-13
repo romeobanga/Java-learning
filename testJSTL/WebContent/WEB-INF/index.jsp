@@ -41,6 +41,7 @@ la bean n'existe pas
 <c:set var="message">
 Salut les zéros ! Contenu de la variable modifiée par une autre instruction
 </c:set>
+
 <c:out value="${message}" /> <br />
 
 <!-- Initialiser la valeur de la session : locale par la valeur du paramètre lang -->

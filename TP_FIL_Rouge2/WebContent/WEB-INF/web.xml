@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<jsp-config> <!-- inclure la directive <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c" %> dans tous les fichiers .jsp -->
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+	
+<servlet>
+    <servlet-name>Client</servlet-name>
+    <servlet-class>tp.servlets.Client</servlet-class>
+    <load-on-startup>1</load-on-startup>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Client</servlet-name>
+    <url-pattern>/client</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Commande</servlet-name>
+    <servlet-class>tp.servlets.Commande</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Commande</servlet-name>
+    <url-pattern>/commande</url-pattern>
+  </servlet-mapping>
+  
+</web-app>
+	

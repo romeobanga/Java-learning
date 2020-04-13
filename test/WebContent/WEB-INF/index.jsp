@@ -44,7 +44,7 @@ alors le bean sera simplement récupéré et le texte ne sera pas affiché. --%>
 <jsp:setProperty name="auteur2" property="nom"/>
 <jsp:getProperty name="auteur2" property="nom"    />
 <%-- L'action suivante associe directement la valeur récupérée
-depuis le paramètre de la requête nommé ici 'nom' à la propriété 'prenom' : --%>
+depuis le paramètre de la requête nommé ici 'nom' à la propriété 'nom' : --%>
 
 <jsp:setProperty name="auteur2" property="*" />
 <%-- L'action suivante associe automatiquement la valeur récupérée
@@ -53,6 +53,6 @@ depuis chaque paramètre de la requête à la propriété de même nom : --%>
 <jsp:getProperty name="auteur2" property="prenom"    />
 
 </p>
-
+<jsp:forward page="/page.jsp" />
 </body>
 </html>

@@ -22,7 +22,8 @@
                     <br />
                     
                     <label for="pays">Pays visités: <span class="requis"> 
-                    <c:forEach var="pays" items="${ paramValues.pays}" > <c:out value="${pays}"/> </c:forEach>
+                    <c:forEach var="listePays" items="${ paramValues.pays}" > <c:out value="${listePays}"/> </c:forEach>
+                    
                     </span></label>
                     <br />
                     
@@ -47,7 +48,7 @@
 	             			  </c:if>
              			 </c:when>
              			 <c:otherwise>
-             			  <c:forEach var="value" items="${parametre.value}">
+             			  	 <c:forEach var="value" items="${parametre.value}">
 	             			 	<c:out value="${ value}" /> 
 	             			  </c:forEach>
              			 </c:otherwise>
