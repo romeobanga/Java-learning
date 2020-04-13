@@ -4,4 +4,7 @@
 <fullyQualifiedTypeName name="java.util.InputMismatchException"/>
 <fullyQualifiedTypeName name="java.util.ArrayList"/>
 <fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="pro.forms.InscriptionForm"/>
+<fullyQualifiedTypeName name="pro.beans.Utilisateurs"/>
 </qualifiedTypeNameHistroy>
