@@ -153,7 +153,7 @@
              Note: The pattern used is equivalent to using pattern="common" -->
         <Valve className="org.apache.catalina.valves.AccessLogValve" directory="logs" pattern="%h %l %u %t &quot;%r&quot; %s %b" prefix="localhost_access_log" suffix=".txt"/>
 
-      <Context docBase="test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/><Context docBase="TP_FIL_Rouge1" path="/TP_FIL_Rouge1" reloadable="true" source="org.eclipse.jst.jee.server:TP_FIL_Rouge1"/><Context docBase="testJSTL" path="/testJSTL" reloadable="true" source="org.eclipse.jst.jee.server:testJSTL"/><Context docBase="jstl_exo1" path="/jstl_exo1" reloadable="true" source="org.eclipse.jst.jee.server:jstl_exo1"/><Context docBase="jstl_exo2" path="/jstl_exo2" reloadable="true" source="org.eclipse.jst.jee.server:jstl_exo2"/><Context docBase="TP_FIL_Rouge2" path="/TP_FIL_Rouge2" reloadable="true" source="org.eclipse.jst.jee.server:TP_FIL_Rouge2"/></Host>
+      <Context docBase="test" path="/test" reloadable="true" source="org.eclipse.jst.jee.server:test"/><Context docBase="TP_FIL_Rouge1" path="/TP_FIL_Rouge1" reloadable="true" source="org.eclipse.jst.jee.server:TP_FIL_Rouge1"/><Context docBase="testJSTL" path="/testJSTL" reloadable="true" source="org.eclipse.jst.jee.server:testJSTL"/><Context docBase="jstl_exo1" path="/jstl_exo1" reloadable="true" source="org.eclipse.jst.jee.server:jstl_exo1"/><Context docBase="jstl_exo2" path="/jstl_exo2" reloadable="true" source="org.eclipse.jst.jee.server:jstl_exo2"/><Context docBase="TP_FIL_Rouge2" path="/TP_FIL_Rouge2" reloadable="true" source="org.eclipse.jst.jee.server:TP_FIL_Rouge2"/><Context docBase="pro" path="/pro" reloadable="true" source="org.eclipse.jst.jee.server:pro"/></Host>
     </Engine>
   </Service>
 </Server>
