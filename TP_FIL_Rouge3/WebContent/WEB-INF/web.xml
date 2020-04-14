@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+	<jsp-config> 
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+
+	<servlet>
+	    <servlet-name>Client</servlet-name>
+	    <servlet-class>tp.servlets.Client</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>Client</servlet-name>
+	    <url-pattern>/client</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>Commande</servlet-name>
+	    <servlet-class>tp.servlets.Commande</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>Commande</servlet-name>
+	    <url-pattern>/commande</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>AfficherClient</servlet-name>
+	    <servlet-class>tp.servlets.AfficherClient</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>AfficherClient</servlet-name>
+	    <url-pattern>/afficherclient</url-pattern>
+	  </servlet-mapping>
+	  
+	  <servlet>
+	    <servlet-name>AfficherCommande</servlet-name>
+	    <servlet-class>tp.servlets.AfficherCommande</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>AfficherCommande</servlet-name>
+	    <url-pattern>/affichercommande</url-pattern>
+	  </servlet-mapping>
+</web-app>
