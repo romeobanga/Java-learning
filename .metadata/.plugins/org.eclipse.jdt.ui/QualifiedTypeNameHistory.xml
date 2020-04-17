@@ -9,6 +9,12 @@
 <fullyQualifiedTypeName name="pro.beans.Utilisateur"/>
 <fullyQualifiedTypeName name="tp.beans.Clients"/>
 <fullyQualifiedTypeName name="tp.form.CreationClient"/>
-<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
 <fullyQualifiedTypeName name="tp.servlets.Commande"/>
+<fullyQualifiedTypeName name="tp.beans.Commandes"/>
+<fullyQualifiedTypeName name="org.joda.time.DateTime"/>
+<fullyQualifiedTypeName name="org.joda.time.format.DateTimeFormat"/>
+<fullyQualifiedTypeName name="tp.form.CreationCommande"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="testSession.form.formUtilisateur"/>
+<fullyQualifiedTypeName name="testSession.beans.Utilisateur"/>
 </qualifiedTypeNameHistroy>

@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+<session-config> 
+		<session-timeout>20</session-timeout> <!--  temps de la session = 20mn-->
+</session-config>
+<jsp-config> 
+		<jsp-property-group>
+			<url-pattern>*.jsp</url-pattern>
+			<include-prelude>/WEB-INF/taglibs.jsp</include-prelude>
+		</jsp-property-group>
+	</jsp-config>
+	
+	<servlet>
+	    <servlet-name>Connexion</servlet-name>
+	    <servlet-class>testSession.servlets.Connexion</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  </servlet>
+	  <servlet-mapping>
+	    <servlet-name>Connexion</servlet-name>
+	    <url-pattern>/connexion</url-pattern>
+	  </servlet-mapping>
+
+<servlet>
+	    <servlet-name>Deconnexion</servlet-name>
+	    <servlet-class>testSession.servlets.Deconnexion</servlet-class>
+	    <load-on-startup>1</load-on-startup>
+  </servlet>	  
+<servlet-mapping>
+	<servlet-name>Deconnexion</servlet-name>
+	<url-pattern>/deconnexion</url-pattern>
+</servlet-mapping>
+
+
+
+<!-- <filter>
+	<filter-name>RestrictionFilter</filter-name>
+	<filter-class>testSession.filters.RestrictionFilter</filter-class>
+</filter>
+<filter-mapping>
+	<filter-name>RestrictionFilter</filter-name>
+	<url-pattern>/restreint/*</url-pattern>
+</filter-mapping>  Pour la restriction sur les fichiers contenus dans le dossier /restreint-->
+
+ <filter> <!-- Pour la restriction sur l'appli toute entière -->
+        <filter-name>RestrictionFilter</filter-name>
+        <filter-class>testSession.filters.RestrictionFilter</filter-class>
+</filter>
+<filter-mapping>
+        <filter-name>RestrictionFilter</filter-name>
+        <url-pattern>/*</url-pattern>
+      <!--   <dispatcher>REQUEST</dispatcher>  Evenemment qqui declenche le filtre   
+        <dispatcher>FORWARD</dispatcher> 
+        <dispatcher>INCLUDE</dispatcher> -->
+</filter-mapping> 
+
+<filter><!-- Filtre natif pour gérer l'encodage coté serveur  -->
+    <filter-name>Set Character Encoding</filter-name>
+    <filter-class>org.apache.catalina.filters.SetCharacterEncodingFilter</filter-class>
+    <init-param>
+        <param-name>encoding</param-name>
+        <param-value>UTF-8</param-value>
+    </init-param>
+    <init-param>
+        <param-name>ignore</param-name>
+        <param-value>false</param-value>
+    </init-param>
+</filter>
+<filter-mapping>
+    <filter-name>Set Character Encoding</filter-name>
+    <url-pattern>/*</url-pattern>
+</filter-mapping>
+
+<!-- <servlet>
+	    <servlet-name>AccesRestreint</servlet-name>
+	    <servlet-class>testSession.servlets.AccesRestreint</servlet-class>
+	   </servlet>	  
+<servlet-mapping>
+	<servlet-name>AccesRestreint</servlet-name>
+	<url-pattern>/accesrestreint</url-pattern>
+</servlet-mapping> -->
+</web-app>
+	
